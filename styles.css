@@ -102,6 +102,10 @@ section h2 {
   border-radius: 10px;
   box-shadow: 0 3px 10px rgba(0,0,0,0.1);
   margin: 20px auto;
+  transition: transform 0.3s ease;
+}
+.perfil-profesional:hover {
+  transform: translateY(-5px);
 }
 
 /* Carreras (diseño similar a los bloques indicados) */
@@ -156,6 +160,10 @@ footer {
 .footer-content .derechos {
   text-align: right;
   font-size: 0.9em;
+}
+.boton{
+  color: #fff;
+  text-decoration: none;
 }
 
 /* Responsive */
