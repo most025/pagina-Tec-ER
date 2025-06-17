@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+
+:root {
+  /* Colores Generales */
+  --color-fondo-pagina: rgb(239, 238, 234);
+  --color-texto: #333;
+  --fuente-pagina: "Sansation", sans-serif;
+  
+  /* Navegación */
+  --color-primario: #1565c0;
+  --color-texto-nav: #fff;
+  --hover-nav: rgba(255, 255, 255, 0.2);
+}
+
+/* Estilos generales */
+body {
+  font-family: var(--fuente-pagina);
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-fondo-pagina);
+  color: var(--color-texto);
+  line-height: 1.6;
+}
+
+/* Header y navegación: reducción de padding para una barra superior menos alta */
+header {
+  background-color: var(--color-primario);
+  padding: 20px 20px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+header nav ul li {
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: var(--color-texto-nav);
+  font-weight: bold;
+  padding: 8px 15px;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  background-color: var(--hover-nav);
+}
+
+
+/* Secciones */
+section {
+  padding: 60px 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+section h2 {
+  color: var(--color-primario);
+  margin-bottom: 30px;
+}
+
+/* Perfil Profesional */
+.perfil-profesional {
+  background-color: rgb(245, 240, 205);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  margin: 20px auto;
+}
+
+/* Carreras (diseño similar a los bloques indicados) */
+.carrera {
+  background-color: #fff;
+  padding: 30px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  display: inline-block;
+  width: calc(50% - 80px);
+  vertical-align: top;
+}
+
+.carrera:hover {
+  transform: translateY(-5px);
+}
+
+.carrera h3 {
+  color: var(--color-primario);
+  margin-bottom: 15px;
+}
+
+/* Galería: marco alrededor del carrusel */
+.carousel-frame {
+  border: 2px solid var(--color-primario);
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+/* Footer: distribución a izquierda y derecha */
+footer {
+  background-color: var(--color-primario);
+  color: var(--color-texto-nav);
+  padding: 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-content .contactos {
+  text-align: left;
+  font-size: 0.9em;
+}
+
+.footer-content .derechos {
+  text-align: right;
+  font-size: 0.9em;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .carrera {
+    width: calc(100% - 40px);
+  }
+  section {
+    padding: 40px 20px;
+  }
+  header h1 {
+    font-size: 2em;
+  }
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer-content .contactos,
+  .footer-content .derechos {
+    text-align: center;
+  }
+}
