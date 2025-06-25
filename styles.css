@@ -97,7 +97,7 @@ section h2 {
 }
 /* Perfil Profesional */
 .perfil-profesional {
-  background-color: rgb(245, 240, 205);
+  background-color: rgb(255, 254, 249);
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 3px 10px rgba(0,0,0,0.1);
@@ -164,6 +164,11 @@ footer {
 .boton{
   color: #fff;
   text-decoration: none;
+}
+.column {
+       width: 33.33%; /* Ocupa un tercio del ancho del contenedor */
+       padding: 10px; /* Opcional: Añade espacio alrededor del contenido */
+       box-sizing: border-box; /* Asegura que el padding no aumente el ancho */
 }
 
 /* Responsive */
